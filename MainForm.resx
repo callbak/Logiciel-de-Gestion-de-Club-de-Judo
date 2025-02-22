@@ -1,0 +1,990 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="header1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins SemiBold, 24pt, style=Bold</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="header1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="header1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>491, 64</value>
+  </data>
+  <data name="header1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>563, 70</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="header1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="header1.Text" xml:space="preserve">
+    <value>TABLEAU DE BORD</value>
+  </data>
+  <data name="header1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;header1.Name" xml:space="preserve">
+    <value>header1</value>
+  </data>
+  <data name="&gt;&gt;header1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;header1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;header1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;membersLabel.Name" xml:space="preserve">
+    <value>membersLabel</value>
+  </data>
+  <data name="&gt;&gt;membersLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;membersLabel.Parent" xml:space="preserve">
+    <value>membersPanel</value>
+  </data>
+  <data name="&gt;&gt;membersLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;membersPicture.Name" xml:space="preserve">
+    <value>membersPicture</value>
+  </data>
+  <data name="&gt;&gt;membersPicture.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;membersPicture.Parent" xml:space="preserve">
+    <value>membersPanel</value>
+  </data>
+  <data name="&gt;&gt;membersPicture.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="membersPanel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="membersPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 228</value>
+  </data>
+  <data name="membersPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 225</value>
+  </data>
+  <data name="membersPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;membersPanel.Name" xml:space="preserve">
+    <value>membersPanel</value>
+  </data>
+  <data name="&gt;&gt;membersPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;membersPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;membersPanel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="membersLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins SemiBold, 16.2pt, style=Bold</value>
+  </data>
+  <data name="membersLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="membersLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 120</value>
+  </data>
+  <data name="membersLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 43</value>
+  </data>
+  <data name="membersLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="membersLabel.Text" xml:space="preserve">
+    <value>MEMBRES</value>
+  </data>
+  <data name="membersLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;membersLabel.Name" xml:space="preserve">
+    <value>membersLabel</value>
+  </data>
+  <data name="&gt;&gt;membersLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;membersLabel.Parent" xml:space="preserve">
+    <value>membersPanel</value>
+  </data>
+  <data name="&gt;&gt;membersLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="membersPicture.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="membersPicture.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 35</value>
+  </data>
+  <data name="membersPicture.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 76</value>
+  </data>
+  <data name="membersPicture.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="membersPicture.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;membersPicture.Name" xml:space="preserve">
+    <value>membersPicture</value>
+  </data>
+  <data name="&gt;&gt;membersPicture.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;membersPicture.Parent" xml:space="preserve">
+    <value>membersPanel</value>
+  </data>
+  <data name="&gt;&gt;membersPicture.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;membershipsLabel.Name" xml:space="preserve">
+    <value>membershipsLabel</value>
+  </data>
+  <data name="&gt;&gt;membershipsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;membershipsLabel.Parent" xml:space="preserve">
+    <value>membershipsPanel</value>
+  </data>
+  <data name="&gt;&gt;membershipsLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;membershipsPicture.Name" xml:space="preserve">
+    <value>membershipsPicture</value>
+  </data>
+  <data name="&gt;&gt;membershipsPicture.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;membershipsPicture.Parent" xml:space="preserve">
+    <value>membershipsPanel</value>
+  </data>
+  <data name="&gt;&gt;membershipsPicture.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="membershipsPanel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="membershipsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>335, 228</value>
+  </data>
+  <data name="membershipsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 225</value>
+  </data>
+  <data name="membershipsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;membershipsPanel.Name" xml:space="preserve">
+    <value>membershipsPanel</value>
+  </data>
+  <data name="&gt;&gt;membershipsPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;membershipsPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;membershipsPanel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="membershipsLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins SemiBold, 16.2pt, style=Bold</value>
+  </data>
+  <data name="membershipsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="membershipsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-7, 120</value>
+  </data>
+  <data name="membershipsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>258, 43</value>
+  </data>
+  <data name="membershipsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="membershipsLabel.Text" xml:space="preserve">
+    <value>ABONNEMENTS</value>
+  </data>
+  <data name="membershipsLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;membershipsLabel.Name" xml:space="preserve">
+    <value>membershipsLabel</value>
+  </data>
+  <data name="&gt;&gt;membershipsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;membershipsLabel.Parent" xml:space="preserve">
+    <value>membershipsPanel</value>
+  </data>
+  <data name="&gt;&gt;membershipsLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="membershipsPicture.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="membershipsPicture.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 35</value>
+  </data>
+  <data name="membershipsPicture.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 76</value>
+  </data>
+  <data name="membershipsPicture.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="membershipsPicture.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;membershipsPicture.Name" xml:space="preserve">
+    <value>membershipsPicture</value>
+  </data>
+  <data name="&gt;&gt;membershipsPicture.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;membershipsPicture.Parent" xml:space="preserve">
+    <value>membershipsPanel</value>
+  </data>
+  <data name="&gt;&gt;membershipsPicture.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;feesLabel.Name" xml:space="preserve">
+    <value>feesLabel</value>
+  </data>
+  <data name="&gt;&gt;feesLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;feesLabel.Parent" xml:space="preserve">
+    <value>feesPanel</value>
+  </data>
+  <data name="&gt;&gt;feesLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;feesPicture.Name" xml:space="preserve">
+    <value>feesPicture</value>
+  </data>
+  <data name="&gt;&gt;feesPicture.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;feesPicture.Parent" xml:space="preserve">
+    <value>feesPanel</value>
+  </data>
+  <data name="&gt;&gt;feesPicture.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="feesPanel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="feesPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>621, 228</value>
+  </data>
+  <data name="feesPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 225</value>
+  </data>
+  <data name="feesPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;feesPanel.Name" xml:space="preserve">
+    <value>feesPanel</value>
+  </data>
+  <data name="&gt;&gt;feesPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;feesPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;feesPanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="feesLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins SemiBold, 16.2pt, style=Bold</value>
+  </data>
+  <data name="feesLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="feesLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 120</value>
+  </data>
+  <data name="feesLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 43</value>
+  </data>
+  <data name="feesLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="feesLabel.Text" xml:space="preserve">
+    <value>PAIMENTS</value>
+  </data>
+  <data name="feesLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;feesLabel.Name" xml:space="preserve">
+    <value>feesLabel</value>
+  </data>
+  <data name="&gt;&gt;feesLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;feesLabel.Parent" xml:space="preserve">
+    <value>feesPanel</value>
+  </data>
+  <data name="&gt;&gt;feesLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="feesPicture.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="feesPicture.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 35</value>
+  </data>
+  <data name="feesPicture.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 76</value>
+  </data>
+  <data name="feesPicture.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="feesPicture.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;feesPicture.Name" xml:space="preserve">
+    <value>feesPicture</value>
+  </data>
+  <data name="&gt;&gt;feesPicture.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;feesPicture.Parent" xml:space="preserve">
+    <value>feesPanel</value>
+  </data>
+  <data name="&gt;&gt;feesPicture.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="consulLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins SemiBold, 16.2pt, style=Bold</value>
+  </data>
+  <data name="consulLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="consulLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-4, 120</value>
+  </data>
+  <data name="consulLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 43</value>
+  </data>
+  <data name="consulLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="consulLabel.Text" xml:space="preserve">
+    <value>CONSULTATION</value>
+  </data>
+  <data name="consulLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;consulLabel.Name" xml:space="preserve">
+    <value>consulLabel</value>
+  </data>
+  <data name="&gt;&gt;consulLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;consulLabel.Parent" xml:space="preserve">
+    <value>consulPanel</value>
+  </data>
+  <data name="&gt;&gt;consulLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="consulPicture.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="consulPicture.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 35</value>
+  </data>
+  <data name="consulPicture.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 76</value>
+  </data>
+  <data name="consulPicture.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="consulPicture.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;consulPicture.Name" xml:space="preserve">
+    <value>consulPicture</value>
+  </data>
+  <data name="&gt;&gt;consulPicture.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;consulPicture.Parent" xml:space="preserve">
+    <value>consulPanel</value>
+  </data>
+  <data name="&gt;&gt;consulPicture.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="consulPanel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="consulPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>907, 228</value>
+  </data>
+  <data name="consulPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 225</value>
+  </data>
+  <data name="consulPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;consulPanel.Name" xml:space="preserve">
+    <value>consulPanel</value>
+  </data>
+  <data name="&gt;&gt;consulPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;consulPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;consulPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;statLabel.Name" xml:space="preserve">
+    <value>statLabel</value>
+  </data>
+  <data name="&gt;&gt;statLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statLabel.Parent" xml:space="preserve">
+    <value>statsPanel</value>
+  </data>
+  <data name="&gt;&gt;statLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;statPicture.Name" xml:space="preserve">
+    <value>statPicture</value>
+  </data>
+  <data name="&gt;&gt;statPicture.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statPicture.Parent" xml:space="preserve">
+    <value>statsPanel</value>
+  </data>
+  <data name="&gt;&gt;statPicture.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="statsPanel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="statsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1193, 228</value>
+  </data>
+  <data name="statsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 225</value>
+  </data>
+  <data name="statsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;statsPanel.Name" xml:space="preserve">
+    <value>statsPanel</value>
+  </data>
+  <data name="&gt;&gt;statsPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statsPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;statsPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="statLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins SemiBold, 16.2pt, style=Bold</value>
+  </data>
+  <data name="statLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="statLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 120</value>
+  </data>
+  <data name="statLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>233, 43</value>
+  </data>
+  <data name="statLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="statLabel.Text" xml:space="preserve">
+    <value>STATISTIQUES</value>
+  </data>
+  <data name="statLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;statLabel.Name" xml:space="preserve">
+    <value>statLabel</value>
+  </data>
+  <data name="&gt;&gt;statLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statLabel.Parent" xml:space="preserve">
+    <value>statsPanel</value>
+  </data>
+  <data name="&gt;&gt;statLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="statPicture.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="statPicture.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 35</value>
+  </data>
+  <data name="statPicture.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 76</value>
+  </data>
+  <data name="statPicture.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="statPicture.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;statPicture.Name" xml:space="preserve">
+    <value>statPicture</value>
+  </data>
+  <data name="&gt;&gt;statPicture.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statPicture.Parent" xml:space="preserve">
+    <value>statsPanel</value>
+  </data>
+  <data name="&gt;&gt;statPicture.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="userLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 13.8pt, style=Bold</value>
+  </data>
+  <data name="userLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="userLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 42</value>
+  </data>
+  <data name="userLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 30</value>
+  </data>
+  <data name="userLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="userLabel.Text" xml:space="preserve">
+    <value>UTILISATEUR :</value>
+  </data>
+  <data name="&gt;&gt;userLabel.Name" xml:space="preserve">
+    <value>userLabel</value>
+  </data>
+  <data name="&gt;&gt;userLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;userLabel.Parent" xml:space="preserve">
+    <value>userInfo</value>
+  </data>
+  <data name="&gt;&gt;userLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 25</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 47</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>userInfo</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 47</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>roleInfo</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="roleLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 13.8pt, style=Bold</value>
+  </data>
+  <data name="roleLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="roleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 40</value>
+  </data>
+  <data name="roleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 30</value>
+  </data>
+  <data name="roleLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="roleLabel.Text" xml:space="preserve">
+    <value>RÔLE :</value>
+  </data>
+  <data name="&gt;&gt;roleLabel.Name" xml:space="preserve">
+    <value>roleLabel</value>
+  </data>
+  <data name="&gt;&gt;roleLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;roleLabel.Parent" xml:space="preserve">
+    <value>roleInfo</value>
+  </data>
+  <data name="&gt;&gt;roleLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="userField.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 13.8pt, style=Bold</value>
+  </data>
+  <data name="userField.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="userField.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 40</value>
+  </data>
+  <data name="userField.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 30</value>
+  </data>
+  <data name="userField.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;userField.Name" xml:space="preserve">
+    <value>userField</value>
+  </data>
+  <data name="&gt;&gt;userField.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;userField.Parent" xml:space="preserve">
+    <value>userInfo</value>
+  </data>
+  <data name="&gt;&gt;userField.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="roleField.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 13.8pt, style=Bold</value>
+  </data>
+  <data name="roleField.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="roleField.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 40</value>
+  </data>
+  <data name="roleField.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 30</value>
+  </data>
+  <data name="roleField.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;roleField.Name" xml:space="preserve">
+    <value>roleField</value>
+  </data>
+  <data name="&gt;&gt;roleField.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;roleField.Parent" xml:space="preserve">
+    <value>roleInfo</value>
+  </data>
+  <data name="&gt;&gt;roleField.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="userInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>335, 671</value>
+  </data>
+  <data name="userInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>472, 100</value>
+  </data>
+  <data name="userInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;userInfo.Name" xml:space="preserve">
+    <value>userInfo</value>
+  </data>
+  <data name="&gt;&gt;userInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;userInfo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;userInfo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="roleInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>907, 671</value>
+  </data>
+  <data name="roleInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>395, 100</value>
+  </data>
+  <data name="roleInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;roleInfo.Name" xml:space="preserve">
+    <value>roleInfo</value>
+  </data>
+  <data name="&gt;&gt;roleInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;roleInfo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;roleInfo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pictureBox3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="pictureBox3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="pictureBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1338, 3</value>
+  </data>
+  <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 39</value>
+  </data>
+  <data name="pictureBox3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Name" xml:space="preserve">
+    <value>pictureBox3</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="pictureBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1384, 3</value>
+  </data>
+  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 39</value>
+  </data>
+  <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
+    <value>pictureBox2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="pictureBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1430, 3</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 39</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1482, 807</value>
+  </data>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 24, 3, 3</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>mainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
