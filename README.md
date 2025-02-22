@@ -1,1 +1,1 @@
-# Club manager
+# Logiciel de Gestion de Club de Judo
