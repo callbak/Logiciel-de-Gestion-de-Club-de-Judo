@@ -78,6 +78,7 @@ Développé en C#, ce projet offre une interface conviviale et des fonctionnalit
 
 ## Captures d'écran
 
+![Screenshot 2025-02-23 200839](https://github.com/user-attachments/assets/14d36173-c3ad-44d0-89a5-cf8dca00b541)
 
 
 ---
