@@ -90,7 +90,7 @@ Pour le moment, ce projet n'est pas ouvert aux contributions.
 
 ## Perspectives
 
-Ce projet a pour ambition d'évoluer vers une solution complète de gestion de club de judo avec des fonctionnalités supplémentaires, telles que :
+Ce projet a pour ambition d'évoluer vers une solution complète de gestion de club de judo avec des fonctionnalités supplémentaires, telles que:
 - Gestion des événements et compétitions
 - Notifications automatisées (email/SMS) pour les rappels de paiement et les annonces de club
 - Intégration d'un module de comptabilité avancé
