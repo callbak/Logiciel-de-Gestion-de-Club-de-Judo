@@ -1,109 +1,106 @@
-# Logiciel de Gestion de Club de Judo
-
 
 # Logiciel de Gestion de Club de Judo
 
-![License](https://img.shields.io/github/license/callbak/Logiciel-de-Gestion-de-Club-de-Judo)
-![Issues](https://img.shields.io/github/issues/callbak/Logiciel-de-Gestion-de-Club-de-Judo)
-![Stars](https://img.shields.io/github/stars/callbak/Logiciel-de-Gestion-de-Club-de-Judo)
-
-## 📋 Table of Contents
-- [About the Project](#about-the-project)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
+## Table des Matières
+- [À propos du projet](#à-propos-du-projet)
+- [Fonctionnalités](#fonctionnalités)
+- [Technologies Utilisées](#technologies-utilisées)
+- [Prise en Main](#prise-en-main)
+  - [Prérequis](#prérequis)
   - [Installation](#installation)
   - [Configuration](#configuration)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- [Utilisation](#utilisation)
+- [Captures d'écran](#captures-décran)
+- [Contribution](#contribution)
+- [Perspectives](#perspectives)
+- [Remerciements](#remerciements)
 
 ---
 
-## 🚀 About the Project
+## À propos du projet
 
-Logiciel de Gestion de Club de Judo is a desktop application designed to streamline the management of a judo club. It allows administrators to efficiently manage members, track fees, schedule sessions, and maintain detailed records. This project was developed in C# to provide a user-friendly interface and robust functionalities for club administration.
-
----
-
-## ✨ Features
-
-- Member registration and management
-- Session scheduling and attendance tracking
-- Fee management and payment tracking
-- Reports generation for club administration
-- User-friendly graphical interface
+Le Logiciel de Gestion de Club de Judo est une application de bureau conçue pour simplifier la gestion d'un club de judo. 
+Elle permet aux administrateurs de gérer efficacement les membres, de suivre les paiements et de maintenir des enregistrements détaillés. 
+Développé en C#, ce projet offre une interface conviviale et des fonctionnalités robustes pour l'administration du club.
 
 ---
 
-## 🛠 Tech Stack
+## Fonctionnalités
 
-- **Language:** C#
-- **Framework:** .NET Framework (Windows Forms)
-- **Database:** Local database (e.g., SQL Server or SQLite)
-- **IDE:** Visual Studio
+- Enregistrement des rôles d'utilisateur (administrateur)
+- Inscription et gestion des membres
+- Gestion et suivi des paiements
+- Interface graphique intuitive et facile à utiliser
 
 ---
 
-## 🛠 Getting Started
+## Technologies Utilisées
 
-### ✅ Prerequisites
+- **Langage :** C#
+- **Framework :** .NET Framework
+- **Base de données :** Base de données locale (SQL Server)
+- **Environnement de développement :** Visual Studio
 
-- Visual Studio (Recommended: 2019 or later)
+---
+
+## Prise en Main
+
+### Prérequis
+
+- Visual Studio (version recommandée : 2019 ou supérieure)
 - .NET Framework
-- SQL Server or SQLite (depending on the database configuration)
+- SQL Server 
 
-### ⚙️ Installation
+### Installation
 
-1. Clone the repository:
+1. Cloner le dépôt :
    ```sh
    git clone https://github.com/callbak/Logiciel-de-Gestion-de-Club-de-Judo.git
    ```
-2. Open the solution file (`.sln`) in Visual Studio.
-3. Restore the NuGet packages.
-4. Build the project to resolve dependencies.
+2. Ouvrir le fichier solution (`.sln`) avec Visual Studio.
+3. Restaurer les packages NuGet.
+4. Compiler le projet pour résoudre les dépendances.
 
-### 🔧 Configuration
+### Configuration
 
-1. Set up the database connection string in the configuration file.
-2. Ensure the database is initialized and accessible.
-
----
-
-## 🚀 Usage
-
-1. Launch the application from Visual Studio or as an executable.
-2. Register members, manage sessions, and track payments.
-3. Generate reports for administrative purposes.
+1. Configurer la chaîne de connexion à la base de données dans le fichier de configuration.
+2. S'assurer que la base de données est initialisée et accessible.
 
 ---
 
-## 📸 Screenshots
+## Utilisation
 
-Add screenshots of the application UI to showcase its features.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please fork the repository, create a feature branch, and submit a pull request.  
-For more details, please read the [CONTRIBUTING.md](CONTRIBUTING.md).
+1. Lancer l'application depuis Visual Studio ou en tant qu'exécutable.
+2. Vérifier les fonctionnalités de l'application.
+3. Enregistrer des utilisateurs, gérer les membres et suivre les paiements.
 
 ---
 
-## 📜 License
+## Captures d'écran
 
-Distributed under the MIT License. See `LICENSE` for more information.
+
 
 ---
 
-## 📧 Contact
+## Contribution
 
-Developer - [callbak](https://github.com/callbak)  
+Pour le moment, ce projet n'est pas ouvert aux contributions.
 
-Project Link: [Logiciel de Gestion de Club de Judo](https://github.com/callbak/Logiciel-de-Gestion-de-Club-de-Judo)
+---
 
+## Perspectives
+
+Ce projet a pour ambition d'évoluer vers une solution complète de gestion de club de judo avec des fonctionnalités supplémentaires, telles que :
+- Gestion des événements et compétitions
+- Notifications automatisées (email/SMS) pour les rappels de paiement et les annonces de club
+- Intégration d'un module de comptabilité avancé
+- Hébergement en cloud pour un accès multi-utilisateur sécurisé
+
+L'objectif à long terme est de fournir un outil flexible et évolutif pour répondre aux besoins des clubs de judo de toutes tailles.
+
+---
+
+## Remerciements
+
+- https://www.freecodecamp.org/learn/foundational-c-sharp-with-microsoft/
 
