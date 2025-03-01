@@ -79,6 +79,13 @@ Développé en C#, ce projet offre une interface conviviale et des fonctionnalit
 ## Captures d'écran
 
 ![Screenshot 2025-02-23 200839](https://github.com/user-attachments/assets/14d36173-c3ad-44d0-89a5-cf8dca00b541)
+![lgdcj_1](https://github.com/user-attachments/assets/00299ffb-cfd2-45b6-90dc-50399da4347c)
+![lgdcj_2](https://github.com/user-attachments/assets/94a21221-65d3-4712-a68d-e7c8f4cb1326)
+![lgdcj_3](https://github.com/user-attachments/assets/e6334a09-e854-4d4a-b414-1e238300fcbb)
+![lgdcj_4](https://github.com/user-attachments/assets/841386b5-c291-448e-939c-ebddecbc6644)
+![lgdcj_5](https://github.com/user-attachments/assets/bcff969d-1bef-4a08-99d2-ed2abd6772e7)
+![lgdcj_5 2](https://github.com/user-attachments/assets/4b3bdffe-3574-416b-900c-922e43c9f635)
+![lgdcj_6](https://github.com/user-attachments/assets/1b0bdaa6-bd85-4609-ba8e-4a948f27e4b9)
 
 
 ---
