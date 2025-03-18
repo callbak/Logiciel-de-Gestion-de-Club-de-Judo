@@ -34,6 +34,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.activeSubscriptionDataGrid = new System.Windows.Forms.DataGridView();
+            this.aName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subFees = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.search_panel = new System.Windows.Forms.Panel();
             this.sportMenu = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -43,9 +46,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.aName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.subID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.subFees = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.activeSubscriptionDataGrid)).BeginInit();
             this.search_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -95,10 +95,56 @@
             this.activeSubscriptionDataGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.activeSubscriptionDataGrid.RowHeadersWidth = 40;
             this.activeSubscriptionDataGrid.RowTemplate.Height = 24;
-            this.activeSubscriptionDataGrid.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.activeSubscriptionDataGrid.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.activeSubscriptionDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.activeSubscriptionDataGrid.Size = new System.Drawing.Size(787, 457);
             this.activeSubscriptionDataGrid.TabIndex = 98;
+            // 
+            // aName
+            // 
+            this.aName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            this.aName.DefaultCellStyle = dataGridViewCellStyle2;
+            this.aName.FillWeight = 1F;
+            this.aName.HeaderText = "NOM";
+            this.aName.MinimumWidth = 6;
+            this.aName.Name = "aName";
+            this.aName.ReadOnly = true;
+            this.aName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.aName.ToolTipText = "nom de l\'athlete";
+            // 
+            // subID
+            // 
+            this.subID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            this.subID.DefaultCellStyle = dataGridViewCellStyle3;
+            this.subID.FillWeight = 1F;
+            this.subID.HeaderText = "ID D\'ABONNEMENT";
+            this.subID.MinimumWidth = 6;
+            this.subID.Name = "subID";
+            this.subID.ReadOnly = true;
+            this.subID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.subID.ToolTipText = "id de l\'abonnement";
+            // 
+            // subFees
+            // 
+            this.subFees.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Format = "dd/MM/yyyy";
+            this.subFees.DefaultCellStyle = dataGridViewCellStyle4;
+            this.subFees.FillWeight = 1F;
+            this.subFees.HeaderText = "DATE DE FIN D\'ABONNEMENT";
+            this.subFees.MinimumWidth = 6;
+            this.subFees.Name = "subFees";
+            this.subFees.ReadOnly = true;
+            this.subFees.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.subFees.ToolTipText = "date de fin d\'abonnement";
             // 
             // search_panel
             // 
@@ -204,52 +250,6 @@
             this.pictureBox1.TabIndex = 92;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // aName
-            // 
-            this.aName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            this.aName.DefaultCellStyle = dataGridViewCellStyle2;
-            this.aName.FillWeight = 1F;
-            this.aName.HeaderText = "NOM";
-            this.aName.MinimumWidth = 6;
-            this.aName.Name = "aName";
-            this.aName.ReadOnly = true;
-            this.aName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.aName.ToolTipText = "nom de l\'athlete";
-            // 
-            // subID
-            // 
-            this.subID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            this.subID.DefaultCellStyle = dataGridViewCellStyle3;
-            this.subID.FillWeight = 1F;
-            this.subID.HeaderText = "ID D\'ABONNEMENT";
-            this.subID.MinimumWidth = 6;
-            this.subID.Name = "subID";
-            this.subID.ReadOnly = true;
-            this.subID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.subID.ToolTipText = "id de l\'abonnement";
-            // 
-            // subFees
-            // 
-            this.subFees.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Format = "dd/MM/yyyy";
-            this.subFees.DefaultCellStyle = dataGridViewCellStyle4;
-            this.subFees.FillWeight = 1F;
-            this.subFees.HeaderText = "DATE DE FIN D\'ABONNEMENT";
-            this.subFees.MinimumWidth = 6;
-            this.subFees.Name = "subFees";
-            this.subFees.ReadOnly = true;
-            this.subFees.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.subFees.ToolTipText = "date de fin d\'abonnement";
             // 
             // consultationForm_currentMemberships
             // 

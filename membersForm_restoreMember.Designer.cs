@@ -29,11 +29,20 @@
         private void InitializeComponent ()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.deletedAthleteDataGrid = new System.Windows.Forms.DataGridView();
+            this.athleteID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.birth_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phone_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.restore = new System.Windows.Forms.DataGridViewImageColumn();
+            this.delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.search_panel = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,13 +57,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.athleteID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.birth_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phone_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.restore = new System.Windows.Forms.DataGridViewImageColumn();
-            this.delete = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.deletedAthleteDataGrid)).BeginInit();
             this.search_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.search_1)).BeginInit();
@@ -77,7 +79,15 @@
             this.deletedAthleteDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.deletedAthleteDataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.deletedAthleteDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.deletedAthleteDataGrid.ColumnHeadersHeight = 55;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.deletedAthleteDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.deletedAthleteDataGrid.ColumnHeadersHeight = 47;
             this.deletedAthleteDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.deletedAthleteDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.athleteID,
@@ -94,6 +104,14 @@
             this.deletedAthleteDataGrid.Name = "deletedAthleteDataGrid";
             this.deletedAthleteDataGrid.ReadOnly = true;
             this.deletedAthleteDataGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.deletedAthleteDataGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.deletedAthleteDataGrid.RowHeadersWidth = 40;
             this.deletedAthleteDataGrid.RowTemplate.Height = 24;
             this.deletedAthleteDataGrid.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
@@ -101,6 +119,101 @@
             this.deletedAthleteDataGrid.Size = new System.Drawing.Size(787, 457);
             this.deletedAthleteDataGrid.TabIndex = 70;
             this.deletedAthleteDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.athleteDataGrid_CellContentClick);
+            // 
+            // athleteID
+            // 
+            this.athleteID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            this.athleteID.DefaultCellStyle = dataGridViewCellStyle2;
+            this.athleteID.FillWeight = 70F;
+            this.athleteID.Frozen = true;
+            this.athleteID.HeaderText = "ID";
+            this.athleteID.MinimumWidth = 6;
+            this.athleteID.Name = "athleteID";
+            this.athleteID.ReadOnly = true;
+            this.athleteID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.athleteID.Width = 55;
+            // 
+            // aName
+            // 
+            this.aName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DarkBlue;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            this.aName.DefaultCellStyle = dataGridViewCellStyle3;
+            this.aName.FillWeight = 75F;
+            this.aName.HeaderText = "nom complet";
+            this.aName.MinimumWidth = 6;
+            this.aName.Name = "aName";
+            this.aName.ReadOnly = true;
+            this.aName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.aName.Width = 120;
+            // 
+            // birth_date
+            // 
+            this.birth_date.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DarkBlue;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Format = "dd/MM/yyyy";
+            dataGridViewCellStyle4.NullValue = null;
+            this.birth_date.DefaultCellStyle = dataGridViewCellStyle4;
+            this.birth_date.FillWeight = 45F;
+            this.birth_date.HeaderText = "date de naissance";
+            this.birth_date.MinimumWidth = 6;
+            this.birth_date.Name = "birth_date";
+            this.birth_date.ReadOnly = true;
+            this.birth_date.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // gender
+            // 
+            this.gender.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DarkBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            this.gender.DefaultCellStyle = dataGridViewCellStyle5;
+            this.gender.FillWeight = 10F;
+            this.gender.HeaderText = "sexe";
+            this.gender.MinimumWidth = 6;
+            this.gender.Name = "gender";
+            this.gender.ReadOnly = true;
+            this.gender.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // phone_number
+            // 
+            this.phone_number.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DarkBlue;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            this.phone_number.DefaultCellStyle = dataGridViewCellStyle6;
+            this.phone_number.FillWeight = 45F;
+            this.phone_number.HeaderText = "numéro de téléphone ";
+            this.phone_number.MinimumWidth = 6;
+            this.phone_number.Name = "phone_number";
+            this.phone_number.ReadOnly = true;
+            this.phone_number.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // restore
+            // 
+            this.restore.HeaderText = "";
+            this.restore.Image = global::Club_manager.Properties.Resources.restore;
+            this.restore.MinimumWidth = 6;
+            this.restore.Name = "restore";
+            this.restore.ReadOnly = true;
+            this.restore.ToolTipText = "restorer";
+            this.restore.Width = 190;
+            // 
+            // delete
+            // 
+            this.delete.HeaderText = "";
+            this.delete.Image = global::Club_manager.Properties.Resources.delete_completely1;
+            this.delete.MinimumWidth = 6;
+            this.delete.Name = "delete";
+            this.delete.ReadOnly = true;
+            this.delete.ToolTipText = "supprimer";
+            this.delete.Width = 189;
             // 
             // search_panel
             // 
@@ -269,101 +382,6 @@
             this.pictureBox1.TabIndex = 64;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // athleteID
-            // 
-            this.athleteID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            this.athleteID.DefaultCellStyle = dataGridViewCellStyle1;
-            this.athleteID.FillWeight = 70F;
-            this.athleteID.Frozen = true;
-            this.athleteID.HeaderText = "ID";
-            this.athleteID.MinimumWidth = 6;
-            this.athleteID.Name = "athleteID";
-            this.athleteID.ReadOnly = true;
-            this.athleteID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.athleteID.Width = 49;
-            // 
-            // aName
-            // 
-            this.aName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            this.aName.DefaultCellStyle = dataGridViewCellStyle2;
-            this.aName.FillWeight = 75F;
-            this.aName.HeaderText = "nom complet";
-            this.aName.MinimumWidth = 6;
-            this.aName.Name = "aName";
-            this.aName.ReadOnly = true;
-            this.aName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.aName.Width = 120;
-            // 
-            // birth_date
-            // 
-            this.birth_date.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DarkBlue;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Format = "dd/MM/yyyy";
-            dataGridViewCellStyle3.NullValue = null;
-            this.birth_date.DefaultCellStyle = dataGridViewCellStyle3;
-            this.birth_date.FillWeight = 45F;
-            this.birth_date.HeaderText = "date de naissance";
-            this.birth_date.MinimumWidth = 6;
-            this.birth_date.Name = "birth_date";
-            this.birth_date.ReadOnly = true;
-            this.birth_date.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // gender
-            // 
-            this.gender.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DarkBlue;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            this.gender.DefaultCellStyle = dataGridViewCellStyle4;
-            this.gender.FillWeight = 10F;
-            this.gender.HeaderText = "sexe";
-            this.gender.MinimumWidth = 6;
-            this.gender.Name = "gender";
-            this.gender.ReadOnly = true;
-            this.gender.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // phone_number
-            // 
-            this.phone_number.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DarkBlue;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            this.phone_number.DefaultCellStyle = dataGridViewCellStyle5;
-            this.phone_number.FillWeight = 45F;
-            this.phone_number.HeaderText = "numéro de téléphone ";
-            this.phone_number.MinimumWidth = 6;
-            this.phone_number.Name = "phone_number";
-            this.phone_number.ReadOnly = true;
-            this.phone_number.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // restore
-            // 
-            this.restore.HeaderText = "";
-            this.restore.Image = global::Club_manager.Properties.Resources.restore;
-            this.restore.MinimumWidth = 6;
-            this.restore.Name = "restore";
-            this.restore.ReadOnly = true;
-            this.restore.ToolTipText = "restorer";
-            this.restore.Width = 190;
-            // 
-            // delete
-            // 
-            this.delete.HeaderText = "";
-            this.delete.Image = global::Club_manager.Properties.Resources.delete_completely1;
-            this.delete.MinimumWidth = 6;
-            this.delete.Name = "delete";
-            this.delete.ReadOnly = true;
-            this.delete.ToolTipText = "supprimer";
-            this.delete.Width = 189;
             // 
             // membersForm_restoreMember
             // 

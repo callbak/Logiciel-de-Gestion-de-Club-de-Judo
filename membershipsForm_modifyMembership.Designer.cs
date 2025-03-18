@@ -80,7 +80,7 @@
             this.subscriptionsDataGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.subscriptionsDataGrid.RowHeadersWidth = 40;
             this.subscriptionsDataGrid.RowTemplate.Height = 24;
-            this.subscriptionsDataGrid.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.subscriptionsDataGrid.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.subscriptionsDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.subscriptionsDataGrid.Size = new System.Drawing.Size(787, 457);
             this.subscriptionsDataGrid.TabIndex = 77;

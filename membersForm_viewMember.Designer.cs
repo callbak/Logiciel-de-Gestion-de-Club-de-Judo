@@ -30,6 +30,7 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -68,15 +69,15 @@
             this.fullName = new System.Windows.Forms.Panel();
             this.athletePicture = new System.Windows.Forms.PictureBox();
             this.athleteDataGrid = new System.Windows.Forms.DataGridView();
-            this.membershipState = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.data_5 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.athleteID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.aName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.birth_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phone_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.membershipState = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.data_5 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.search_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -466,13 +467,13 @@
             this.athleteDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.athleteDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.athleteDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.athleteDataGrid.ColumnHeadersHeight = 47;
             this.athleteDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.athleteID,
             this.aName,
@@ -492,57 +493,21 @@
             this.athleteDataGrid.Name = "athleteDataGrid";
             this.athleteDataGrid.ReadOnly = true;
             this.athleteDataGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.athleteDataGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.athleteDataGrid.RowHeadersWidth = 51;
             this.athleteDataGrid.RowTemplate.Height = 24;
-            this.athleteDataGrid.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.athleteDataGrid.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.athleteDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.athleteDataGrid.Size = new System.Drawing.Size(787, 457);
             this.athleteDataGrid.TabIndex = 61;
             this.athleteDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.athleteDataGrid_CellClick);
-            // 
-            // membershipState
-            // 
-            this.membershipState.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.membershipState.Controls.Add(this.label4);
-            this.membershipState.Controls.Add(this.data_5);
-            this.membershipState.Controls.Add(this.panel7);
-            this.membershipState.Location = new System.Drawing.Point(935, 745);
-            this.membershipState.Name = "membershipState";
-            this.membershipState.Size = new System.Drawing.Size(535, 50);
-            this.membershipState.TabIndex = 57;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(28, 15);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(187, 23);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "état d\'abonnement :";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // data_5
-            // 
-            this.data_5.BackColor = System.Drawing.Color.Transparent;
-            this.data_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.data_5.ForeColor = System.Drawing.Color.Black;
-            this.data_5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.data_5.Location = new System.Drawing.Point(229, 11);
-            this.data_5.Name = "data_5";
-            this.data_5.Size = new System.Drawing.Size(289, 30);
-            this.data_5.TabIndex = 15;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Navy;
-            this.panel7.Location = new System.Drawing.Point(9, 19);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(5, 15);
-            this.panel7.TabIndex = 12;
             // 
             // athleteID
             // 
@@ -610,6 +575,50 @@
             this.phone_number.MinimumWidth = 6;
             this.phone_number.Name = "phone_number";
             this.phone_number.ReadOnly = true;
+            // 
+            // membershipState
+            // 
+            this.membershipState.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.membershipState.Controls.Add(this.label4);
+            this.membershipState.Controls.Add(this.data_5);
+            this.membershipState.Controls.Add(this.panel7);
+            this.membershipState.Location = new System.Drawing.Point(935, 745);
+            this.membershipState.Name = "membershipState";
+            this.membershipState.Size = new System.Drawing.Size(535, 50);
+            this.membershipState.TabIndex = 57;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label4.Location = new System.Drawing.Point(28, 15);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(187, 23);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "état d\'abonnement :";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // data_5
+            // 
+            this.data_5.BackColor = System.Drawing.Color.Transparent;
+            this.data_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.data_5.ForeColor = System.Drawing.Color.Black;
+            this.data_5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.data_5.Location = new System.Drawing.Point(229, 11);
+            this.data_5.Name = "data_5";
+            this.data_5.Size = new System.Drawing.Size(289, 30);
+            this.data_5.TabIndex = 15;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Navy;
+            this.panel7.Location = new System.Drawing.Point(9, 19);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(5, 15);
+            this.panel7.TabIndex = 12;
             // 
             // membersForm_viewMember
             // 

@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Data.SqlClient;
 using System.Drawing;
-using System.Web.UI.WebControls.WebParts;
-using System.Web.UI.WebControls;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -11,7 +10,7 @@ namespace Club_manager
     public partial class membersForm_addMember : Form
     {
         // db managment variables
-        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\1tite\Documents\mcDB.mdf;Integrated Security=True;Connect Timeout=30");
+        string connectionString = (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\1tite\Documents\mcDB.mdf;Integrated Security=True;Connect Timeout=30");
 
         SqlCommand cmd = new SqlCommand();
 
@@ -61,56 +60,62 @@ namespace Club_manager
             sport.Items.Add("JUDO -- SALLE DE SPORT DALLAS");
         }
 
-        private bool RegisterSub_and_Ath (Athlete athlete, Subscription subscription)
+        private async Task<bool> RegisterSub_and_Ath (Athlete athlete, Subscription subscription)
         {
             if (MessageBox.Show("Etes-vous sûr de vouloir inscrire cet athlète ?", "Saving record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                try
+                using (SqlConnection conn = new SqlConnection(connectionString))
                 {
-                    // Insert subscription and get the new ID
-                    cmd = new SqlCommand("INSERT INTO [subscription] (price, subscription_type, subscription_start_date, subscription_end_date, is_active) VALUES(@sp, @st, @ssd, @sed, @sa); SELECT SCOPE_IDENTITY();", conn);
-                    cmd.Parameters.AddWithValue("@sp",  subscription.Price);
-                    cmd.Parameters.AddWithValue("@st",  subscription.SubscriptionType);
-                    cmd.Parameters.AddWithValue("@ssd", subscription.SubscriptionStartDate);
-                    cmd.Parameters.AddWithValue("@sed", subscription.SubscriptionEndDate);
-                    cmd.Parameters.AddWithValue("@sa",  subscription.IsActive);
+                    await conn.OpenAsync();
+                    SqlTransaction sqlTransaction = conn.BeginTransaction();
 
-                    // Open the connection to the db and execute the query
-                    conn.Open();
-                    var result = cmd.ExecuteScalar();
-                    conn.Close();
-
-                    // Check if result is not null
-                    if (result != null)
+                    try
                     {
-                        var subscriptionId = (int)(decimal)result;  // retreive subscription id
+                        int? subscriptionId = null;
+
+                        // Insert subscription
+                        using (SqlCommand cmd = new SqlCommand("INSERT INTO [subscription] (price, subscription_type, subscription_start_date, subscription_end_date, is_active) VALUES(@sp, @st, @ssd, @sed, @sa); SELECT SCOPE_IDENTITY();", conn, sqlTransaction))
+                        {
+                            cmd.Parameters.AddWithValue("@sp", subscription.Price);
+                            cmd.Parameters.AddWithValue("@st", subscription.SubscriptionType);
+                            cmd.Parameters.AddWithValue("@ssd", subscription.SubscriptionStartDate);
+                            cmd.Parameters.AddWithValue("@sed", subscription.SubscriptionEndDate);
+                            cmd.Parameters.AddWithValue("@sa", subscription.IsActive);
+
+                            var result = await cmd.ExecuteScalarAsync();
+                            if (result != null)
+                            {
+                                subscriptionId = (int)(decimal)result; 
+                            }
+                            else
+                            {
+                                MessageBox.Show("Failed to retrieve the subscription ID.");
+                                return false;
+                            }
+                        }
 
                         // Insert athlete
-                        cmd = new SqlCommand("INSERT INTO [athlete] (name, birth_date, sexe, phone_number, image_path, subscription_id) VALUES(@an, @abd, @as, @apn, @aim, @asb)", conn);
-                        cmd.Parameters.AddWithValue("@an", athlete.Name);
-                        cmd.Parameters.AddWithValue("@abd", athlete.BirthDate);
-                        cmd.Parameters.AddWithValue("@as", athlete.Sexe);
-                        cmd.Parameters.AddWithValue("@apn", athlete.PhoneNumber);
-                        cmd.Parameters.AddWithValue("@aim", athlete.ImagePath);
-                        cmd.Parameters.AddWithValue("@asb", subscriptionId);
+                        using (SqlCommand cmd = new SqlCommand("INSERT INTO [athlete] (name, birth_date, sexe, phone_number, image_path, subscription_id) VALUES(@an, @abd, @as, @apn, @aim, @asb)", conn, sqlTransaction))
+                        {
+                            cmd.Parameters.AddWithValue("@an", athlete.Name);
+                            cmd.Parameters.AddWithValue("@abd", athlete.BirthDate);
+                            cmd.Parameters.AddWithValue("@as", athlete.Sexe);
+                            cmd.Parameters.AddWithValue("@apn", athlete.PhoneNumber);
+                            cmd.Parameters.AddWithValue("@aim", athlete.ImagePath);
+                            cmd.Parameters.AddWithValue("@asb", subscriptionId.Value); // Use Value since we know it's not null
 
-                        conn.Open();
-                        cmd.ExecuteNonQuery();
-                        conn.Close();
+                            await cmd.ExecuteNonQueryAsync();
+                        }
 
+                        sqlTransaction.Commit();
                         return true;
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        MessageBox.Show("Failed to retrieve the subscription ID.");
+                        sqlTransaction.Rollback();
+                        MessageBox.Show("Error saving to the database: " + ex.Message);
                         return false;
                     }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error saving to the database: " + ex.Message);
-                    conn.Close();
-                    return false;
                 }
             }
             return false;
@@ -250,7 +255,7 @@ namespace Club_manager
         {
             Close();
         }
-        private void addBTN_Click (object sender, EventArgs e)
+        private async void addBTN_Click (object sender, EventArgs e)
         {
             try
             {
@@ -291,9 +296,14 @@ namespace Club_manager
                 );
 
                 // Registration in the database
-                if (RegisterSub_and_Ath(NewAthlete, NewSubscription))
+                if (await RegisterSub_and_Ath(NewAthlete, NewSubscription))
                 {
                     MessageBox.Show("l'athlète a été ajouté avec succès");
+                    Close();
+                }
+                else
+                {
+                    MessageBox.Show("l'athlète n'a pas été ajouté avec succès");
                     Close();
                 }
             }

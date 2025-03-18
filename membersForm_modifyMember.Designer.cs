@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent ()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.header1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -140,7 +142,15 @@
             this.athleteDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.athleteDataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.athleteDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.athleteDataGrid.ColumnHeadersHeight = 55;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.athleteDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.athleteDataGrid.ColumnHeadersHeight = 47;
             this.athleteDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.athleteDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.athleteID,
@@ -155,9 +165,17 @@
             this.athleteDataGrid.Name = "athleteDataGrid";
             this.athleteDataGrid.ReadOnly = true;
             this.athleteDataGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.athleteDataGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.athleteDataGrid.RowHeadersWidth = 40;
             this.athleteDataGrid.RowTemplate.Height = 24;
-            this.athleteDataGrid.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.athleteDataGrid.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.athleteDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.athleteDataGrid.Size = new System.Drawing.Size(787, 457);
             this.athleteDataGrid.TabIndex = 70;
@@ -166,10 +184,10 @@
             // athleteID
             // 
             this.athleteID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle31.BackColor = System.Drawing.Color.DarkBlue;
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.White;
-            this.athleteID.DefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            this.athleteID.DefaultCellStyle = dataGridViewCellStyle2;
             this.athleteID.HeaderText = "ID";
             this.athleteID.MinimumWidth = 6;
             this.athleteID.Name = "athleteID";
@@ -179,10 +197,10 @@
             // aName
             // 
             this.aName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle32.BackColor = System.Drawing.Color.DarkBlue;
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.White;
-            this.aName.DefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DarkBlue;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            this.aName.DefaultCellStyle = dataGridViewCellStyle3;
             this.aName.HeaderText = "nom complet";
             this.aName.MinimumWidth = 6;
             this.aName.Name = "aName";
@@ -191,10 +209,10 @@
             // birth_date
             // 
             this.birth_date.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle33.BackColor = System.Drawing.Color.DarkBlue;
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.White;
-            this.birth_date.DefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DarkBlue;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            this.birth_date.DefaultCellStyle = dataGridViewCellStyle4;
             this.birth_date.HeaderText = "date de naissance";
             this.birth_date.MinimumWidth = 6;
             this.birth_date.Name = "birth_date";
@@ -203,10 +221,10 @@
             // gender
             // 
             this.gender.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle34.BackColor = System.Drawing.Color.DarkBlue;
-            dataGridViewCellStyle34.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.White;
-            this.gender.DefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DarkBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            this.gender.DefaultCellStyle = dataGridViewCellStyle5;
             this.gender.HeaderText = "sexe";
             this.gender.MinimumWidth = 6;
             this.gender.Name = "gender";
@@ -215,10 +233,10 @@
             // phone_number
             // 
             this.phone_number.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle35.BackColor = System.Drawing.Color.DarkBlue;
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.White;
-            this.phone_number.DefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DarkBlue;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            this.phone_number.DefaultCellStyle = dataGridViewCellStyle6;
             this.phone_number.HeaderText = "numéro de téléphone ";
             this.phone_number.MinimumWidth = 6;
             this.phone_number.Name = "phone_number";
